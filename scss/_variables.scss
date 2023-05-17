@@ -28,9 +28,11 @@ $bgColor: #F7FAFD;
 @mixin bttnSecondary() {
     margin: 8px;
     height: 32px;
+    border: 0px;
     background-color: transparent;
     padding: 0 32px;
-    border: 2px solid $red;
+    -webkit-box-shadow:inset 0px 0px 0px 2px $red;
+    box-shadow:inset 0px 0px 0px 2px $red;
     border-radius: 48px;
     color: $red;
 }

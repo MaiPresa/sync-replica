@@ -16,23 +16,17 @@ nav ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 4px;
   list-style: none;
 }
-
-.bttnSecondary {
-  margin: 8px;
-  height: 32px;
-  background-color: transparent;
-  padding: 0 32px;
-  border: 2px solid #FF556E;
-  border-radius: 48px;
-  color: #FF556E;
+nav ul li {
+  height: 48px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
 }
-
-.bttnSecondary:hover {
-  background-color: #FF556E;
-  color: white;
+nav ul li:hover {
+  color: #FF556E;
 }
 
 header {
@@ -61,25 +55,55 @@ header ul {
   list-style: none;
   padding: 0;
 }
-
-.bttnPrimary {
-  margin: 8px;
+header li div {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  margin: auto;
+}
+header li div svg {
   height: 32px;
-  background-color: #FF556E;
-  padding: 0 32px;
-  border: 0px;
-  border-radius: 48px;
-  color: white;
+  margin: auto;
 }
 
-.bttnPrimary:hover {
-  margin: 8px;
-  height: 32px;
-  background-color: transparent;
-  padding: 0 32px;
-  border: 2px solid #FF556E;
-  border-radius: 48px;
-  color: #FF556E;
+.iconUser {
+  background-color: #EBE7FA;
+}
+.iconUser svg {
+  fill: #AA7EEC;
+}
+
+.iconProgramming {
+  background-color: #DAF4EF;
+}
+.iconProgramming svg {
+  fill: #17CA93;
+}
+
+.iconSettings {
+  background-color: #F8E5EA;
+}
+.iconSettings svg {
+  fill: #FF546E;
+}
+
+.iconChat {
+  background-color: #F8F1DE;
+}
+.iconChat svg {
+  fill: #FFB30F;
+}
+
+.iconRocket {
+  background-color: #E1F2FA;
+}
+.iconRocket svg {
+  fill: #4FB9E8;
 }
 
 .firstSection {
@@ -127,6 +151,50 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.bttnPrimary {
+  margin: 8px;
+  height: 32px;
+  background-color: #FF556E;
+  padding: 0 32px;
+  border: 0px;
+  border-radius: 48px;
+  color: white;
+}
+
+.bttnPrimary:hover {
+  margin: 8px;
+  height: 32px;
+  border: 0px;
+  background-color: transparent;
+  padding: 0 32px;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #FF556E;
+  box-shadow: inset 0px 0px 0px 2px #FF556E;
+  border-radius: 48px;
+  color: #FF556E;
+}
+
+.bttnSecondary {
+  margin: 8px;
+  height: 32px;
+  border: 0px;
+  background-color: transparent;
+  padding: 0 32px;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #FF556E;
+  box-shadow: inset 0px 0px 0px 2px #FF556E;
+  border-radius: 48px;
+  color: #FF556E;
+}
+
+.bttnSecondary:hover {
+  margin: 8px;
+  height: 32px;
+  background-color: #FF556E;
+  padding: 0 32px;
+  border: 0px;
+  border-radius: 48px;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

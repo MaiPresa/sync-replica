@@ -2,7 +2,7 @@
 
 
 nav {
-    @include flexbox(row,space-between ,center, 0px );
+    @include flexbox(row,space-between ,center, 0px);
     height: 64px;
     max-width: 1200px;
     margin: auto;
@@ -12,16 +12,18 @@ nav {
     }
 
     ul {
-        @include flexbox(row,space-between ,center, 24px );
+        @include flexbox(row, space-between ,center, 4px);
         list-style: none;
+        
+        li {
+            height: 48px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+        }
+
+        li:hover {
+            color: $red;
+        }
     }
-}
-
-.bttnSecondary {
-    @include bttnSecondary();
-}
-
-.bttnSecondary:hover {
-    background-color: $red;
-    color: white;
 }
