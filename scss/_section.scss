@@ -1,0 +1,19 @@
+@import 'variables';
+
+
+.firstSection {
+    max-width: 1200px;
+    margin: auto;
+    article {
+        text-align: left;
+        @include flexbox(row, center, center, 24px);
+
+        div {
+            max-width: 75ch;
+        }
+
+        img {
+            max-width: 360px;
+        }
+    }
+}

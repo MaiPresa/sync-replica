@@ -1,0 +1,31 @@
+@import 'variables';
+
+
+header {
+    @include flexbox(column, center, center, 24px);
+    text-align: center;
+
+    div p {
+        max-width: 75ch;
+        min-width: 45ch;
+    }
+    
+    img {
+        max-width: 480px;
+        min-width: 126px;
+    }
+
+    ul {
+        @include flexbox(row, center, center, 24px);
+        flex-wrap: wrap;
+        @include listStyle();
+    }
+}
+
+.bttnPrimary {
+    @include bttnCta();
+}
+
+.bttnPrimary:hover {
+    @include bttnSecondary();
+}
