@@ -49,3 +49,67 @@ background: #555;
 .bttnSecondary:hover {
     @include bttnCta();
 }
+
+// ----------- ICONS ----------
+
+.iconUser {
+    background-color: #EBE7FA;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    @include flexbox (column, center, center, 0px);
+    margin: auto;
+    svg {
+        fill: #AA7EEC;
+        height: 32px;
+        margin: auto;
+    }
+}
+
+.icons {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    @include flexbox (column, center, center, 0px);
+    margin: auto;
+
+    svg {
+        height: 32px;
+        margin: auto;
+    }
+}
+
+.iconProgramming {
+    background-color: #DAF4EF;
+
+    svg {
+        fill: #17CA93;
+    }
+}
+
+.iconSettings {
+    background-color: #F8E5EA;
+
+    svg {
+        fill: #FF546E;
+
+    }
+}
+
+.iconChat {
+    background-color: #F8F1DE;
+
+    svg {
+        fill: #FFB30F;
+
+    }
+}
+
+.iconRocket {
+    background-color: #E1F2FA;
+
+    svg {
+        fill: #4FB9E8;
+
+    }
+}

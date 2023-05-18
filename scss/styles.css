@@ -55,74 +55,109 @@ header ul {
   list-style: none;
   padding: 0;
 }
-header li div {
-  border-radius: 50%;
-  height: 64px;
-  width: 64px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0px;
-  margin: auto;
-}
-header li div svg {
-  height: 32px;
-  margin: auto;
-}
-
-.iconUser {
-  background-color: #EBE7FA;
-}
-.iconUser svg {
-  fill: #AA7EEC;
-}
-
-.iconProgramming {
-  background-color: #DAF4EF;
-}
-.iconProgramming svg {
-  fill: #17CA93;
-}
-
-.iconSettings {
-  background-color: #F8E5EA;
-}
-.iconSettings svg {
-  fill: #FF546E;
-}
-
-.iconChat {
-  background-color: #F8F1DE;
-}
-.iconChat svg {
-  fill: #FFB30F;
-}
-
-.iconRocket {
-  background-color: #E1F2FA;
-}
-.iconRocket svg {
-  fill: #4FB9E8;
-}
 
 .firstSection {
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
-.firstSection article {
-  text-align: left;
+.firstSection .firstArticle {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
-.firstSection article div {
+.firstSection .firstArticle div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0px;
   max-width: 75ch;
+  text-align: left;
 }
-.firstSection article img {
+.firstSection .firstArticle div ul {
+  padding: 16px;
+}
+.firstSection .firstArticle div button {
+  margin-left: -2px;
+}
+.firstSection .firstArticle img {
   max-width: 360px;
+}
+.firstSection .secondArticle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.firstSection .secondArticle div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0px;
+  max-width: 75ch;
+  text-align: left;
+}
+.firstSection .secondArticle div ul {
+  padding: 16px;
+}
+.firstSection .secondArticle div div {
+  margin-left: -8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+}
+.firstSection .secondArticle img {
+  max-width: 360px;
+  order: 1;
+}
+
+.secondSection {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.secondSection ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.secondSection .stars {
+  height: 16px;
+  width: 90px;
+  background-image: url(./../icons/star-solid.svg);
+  background-repeat: repeat-x;
+  filter: invert(75%) sepia(64%) saturate(1775%) hue-rotate(347deg) brightness(100%) contrast(104%);
+  -webkit-filter: invert(75%) sepia(64%) saturate(1775%) hue-rotate(347deg) brightness(100%) contrast(104%);
+}
+.secondSection .testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  max-width: 75ch;
+  min-width: 45ch;
+  text-align: center;
+}
+.secondSection .testimonial hr {
+  border: solid 1px silver;
+  width: 48px;
 }
 
 html {
@@ -195,6 +230,68 @@ body {
   border: 0px;
   border-radius: 48px;
   color: white;
+}
+
+.iconUser {
+  background-color: #EBE7FA;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  margin: auto;
+}
+.iconUser svg {
+  fill: #AA7EEC;
+  height: 32px;
+  margin: auto;
+}
+
+.icons {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  margin: auto;
+}
+.icons svg {
+  height: 32px;
+  margin: auto;
+}
+
+.iconProgramming {
+  background-color: #DAF4EF;
+}
+.iconProgramming svg {
+  fill: #17CA93;
+}
+
+.iconSettings {
+  background-color: #F8E5EA;
+}
+.iconSettings svg {
+  fill: #FF546E;
+}
+
+.iconChat {
+  background-color: #F8F1DE;
+}
+.iconChat svg {
+  fill: #FFB30F;
+}
+
+.iconRocket {
+  background-color: #E1F2FA;
+}
+.iconRocket svg {
+  fill: #4FB9E8;
 }
 
 /*# sourceMappingURL=styles.css.map */

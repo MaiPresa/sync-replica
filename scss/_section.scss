@@ -4,16 +4,84 @@
 .firstSection {
     max-width: 1200px;
     margin: auto;
-    article {
-        text-align: left;
+    @include flexbox(column, center, center, 24px);
+    .firstArticle {
         @include flexbox(row, center, center, 24px);
 
         div {
+            @include flexbox(column, center, flex-start, 0px);
             max-width: 75ch;
+            text-align: left;
+
+            ul {
+                padding: 16px;
+            }
+
+            button {
+                margin-left: -2px;
+            }
         }
 
         img {
             max-width: 360px;
         }
     }
+
+    .secondArticle {
+        @include flexbox(row, center, center, 24px);
+
+        div {
+            @include flexbox(column, center, flex-start, 0px);
+            max-width: 75ch;
+            text-align: left;
+
+            ul {
+                padding: 16px;
+            }
+
+            div {
+                margin-left: -8px;
+                @include flexbox(row, center, flex-start, 0);
+            }
+        }
+
+        img {
+            max-width: 360px;
+            order: 1;
+        }
+    }
 }
+
+.secondSection {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+
+    ul {
+        @include flexbox(row, center, center, 24px);
+        flex-wrap: wrap;
+        @include listStyle();
+    }
+
+    .stars {
+        height: 16px;
+        width: 90px;
+        background-image: url(./../icons/star-solid.svg);
+        background-repeat: repeat-x;
+        filter: invert(75%) sepia(64%) saturate(1775%) hue-rotate(347deg) brightness(100%) contrast(104%);
+        -webkit-filter: invert(75%) sepia(64%) saturate(1775%) hue-rotate(347deg) brightness(100%) contrast(104%);
+    }
+
+    .testimonial {
+        @include flexbox(column, center, center, 0);
+        max-width: 75ch;
+        min-width: 45ch;
+        text-align: center;
+
+        hr {
+            border: solid 1px silver;
+            width: 48px;
+        }
+    }
+}
+
