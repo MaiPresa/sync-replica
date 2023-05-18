@@ -1,6 +1,7 @@
 @use 'navBar';
 @use 'header';
 @use 'section';
+@use 'footer';
 @import 'variables';
 
 
@@ -32,6 +33,18 @@ border-radius: 8px;
 background: #555;
 }
 
+// ----------- BACKGROUND COLORS ----------
+
+.blueBg {
+    padding: 64px 0;
+    background-color: #E8EFF6;
+}
+
+.whiteBg {
+    background-color: white;
+    padding: 48px 0;
+}
+
 // ----------- BUTTONS ----------
 
 .bttnPrimary {
@@ -48,6 +61,13 @@ background: #555;
 
 .bttnSecondary:hover {
     @include bttnCta();
+}
+
+// ----------- CENTER IMAGE ----------
+
+.centerImg {
+    max-width: 480px;
+    min-width: 126px;
 }
 
 // ----------- ICONS ----------
@@ -112,4 +132,8 @@ background: #555;
         fill: #4FB9E8;
 
     }
+}
+
+.iconsTransparent {
+    background-color: transparent;
 }

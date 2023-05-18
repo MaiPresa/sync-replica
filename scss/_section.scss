@@ -80,8 +80,14 @@
 
         hr {
             border: solid 1px silver;
-            width: 48px;
+            width: 24px;
         }
+    }
+
+    article:last-child p {
+        max-width: 75ch;
+        min-width: 45ch;
+        margin: auto;
     }
 }
 

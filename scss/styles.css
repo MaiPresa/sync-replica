@@ -41,10 +41,6 @@ header div p {
   max-width: 75ch;
   min-width: 45ch;
 }
-header img {
-  max-width: 480px;
-  min-width: 126px;
-}
 header ul {
   display: flex;
   flex-direction: row;
@@ -53,7 +49,7 @@ header ul {
   gap: 24px;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 .firstSection {
@@ -135,7 +131,7 @@ header ul {
   gap: 24px;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 .secondSection .stars {
   height: 16px;
@@ -157,7 +153,32 @@ header ul {
 }
 .secondSection .testimonial hr {
   border: solid 1px silver;
-  width: 48px;
+  width: 24px;
+}
+.secondSection article:last-child p {
+  max-width: 75ch;
+  min-width: 45ch;
+  margin: auto;
+}
+
+footer {
+  border-top: solid 1px silver;
+}
+footer .infoContainer {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  margin: auto;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer p {
+  text-align: center;
 }
 
 html {
@@ -186,6 +207,16 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.blueBg {
+  padding: 64px 0;
+  background-color: #E8EFF6;
+}
+
+.whiteBg {
+  background-color: white;
+  padding: 48px 0;
 }
 
 .bttnPrimary {
@@ -230,6 +261,11 @@ body {
   border: 0px;
   border-radius: 48px;
   color: white;
+}
+
+.centerImg {
+  max-width: 480px;
+  min-width: 126px;
 }
 
 .iconUser {
@@ -292,6 +328,10 @@ body {
 }
 .iconRocket svg {
   fill: #4FB9E8;
+}
+
+.iconsTransparent {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=styles.css.map */

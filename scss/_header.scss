@@ -9,11 +9,6 @@ header {
         max-width: 75ch;
         min-width: 45ch;
     }
-    
-    img {
-        max-width: 480px;
-        min-width: 126px;
-    }
 
     ul {
         @include flexbox(row, center, center, 24px);
