@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext">
     <link rel="stylesheet" href="./scss/styles.css">
 
     <title>SYNC WEB</title>
@@ -15,16 +16,23 @@
 
     <nav>
         <img src="./images/logo.svg" alt="Sync Logo">
-        <ul>
-            <li>DESCRIPTION</li>
-            <li>FEATURES</li>
-            <li>SCREENS</li>
-            <li>EXTRA</li>
-            <li><button class="bttnSecondary">DOWNLOAD</button></li>
+        <ul class="smallBold">
+            <a href="#firstScroll"><li>DESCRIPTION</li></a>
+            <a href="#secondScroll"><li>FEATURES</li></a>
+            <a href="#thirdScroll"><li>SCREENS</li></a>
+            <li class="dropdown">
+                <p>EXTRA</p>
+                <div class="dropdownContent">
+                    <p>ARTICLE DETAILS</p>
+                    <p>TERMS CONDITIONS</p>
+                    <p>PRIVACY POLICY</p>
+                </div>
+            </li>
+            <li><a href="https://factoriaf5.org/"><button class="bttnSecondary">DOWNLOAD</button></a></li>
         </ul>
     </nav>
 
-    <header>
+    <header id="firstScroll">
         <div>
             <h1>Mobile App Landing Page</h1>
             <p>Start focusing on your goals and get more things done with Sync mobile 
@@ -32,11 +40,12 @@
                 to help you stay focused and get organized
             </p>
             <div>
-                <button class="bttnPrimary">DOWNLOAD</button><button class="bttnPrimary">DOWNLOAD</button>
+                <button class="bttnPrimary"><div class="appleIcon"></div>DOWNLOAD</button>
+                <button class="bttnPrimary"><div class="playIcon"></div>DOWNLOAD</button>
             </div>
-            <img class="centerImg blueBg" src="./images/header-iphone.png" alt="Sync iPhone">
+            <img class="centerImg" src="./images/header-iphone.png" alt="Sync iPhone">
         </div>
-        <ul>
+        <ul  class="smallBold">
             <li>
                 <div class="icons iconUser">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -85,12 +94,12 @@
         </ul>
     </header>
 
-    <main>
+    <main id="secondScroll">
         <section class="firstSection">
             <article class="firstArticle">
                 <img src="./images/description-1-app.png" alt="App image">
                 <div>
-                    <h2>Organize Your Time And Start Getting Results</h2>
+                    <h2>Organize Your Time<br> And Start Getting<br> Results</h2>
                     <p>Sync is the first mobile app on the market to harness the 
                         power of social connections to help you stop procrastinating 
                         and start getting things done. Give it a try and see the changes 
@@ -104,19 +113,35 @@
                     <button class="bttnPrimary">LIGHTBOX</button>
                 </div>
             </article>
-            <article class="secondArticle">
+            <article class="secondArticle blueBg" id="thirdScroll">
                 <img src="./images/description-2-app.png" alt="App image">
                 <div>
-                    <h2>Organize Your Time And Start Getting Results</h2>
-                    <p>Sync is the first mobile app on the market to harness the 
-                        power of social connections to help you stop procrastinating 
-                        and start getting things done. Give it a try and see the changes 
-                        right away
+                    <div class="screensContainer">
+                        <div class="purpleBttn smallBold">
+                            <div class="watchIcon"></div><p>Schedule</p>
+                        </div>
+                        <div class="whiteBttn smallBold">
+                            <div class="listIcon"></div><p>Tracking</p>
+                        </div>
+                        <div class="whiteBttn smallBold">
+                            <div class="calendarIcon"></div><p>Organize</p>
+                        </div>
+                    </div>
+                    <p>Schedule tasks to keep track of their completion. Sync 
+                        provides multiple scheduling options including alarms and 
+                        reminders.
                     </p>
                     <ul>
-                        <li>Analyse and evaluate your current status and productivity</li>
-                        <li>Begin monitoring your day to day routine with Sync app</li>
-                        <li>See the improved results in no more than a couple of weeks</li>
+                        <li><p>You can always add new tasks or change the settings of 
+                            existing ones in your calendar view or the app control 
+                            panel</p>
+                        </li>
+                        <li><p>It's easy to stay focused on your most important daily 
+                            activities that will get you closer to meeting your goals</p>
+                        </li>
+                        <li><p>Use phone reminders to free up your long term memory 
+                            which will reduce stress and make you more productive</p>
+                        </li>
                     </ul>
                     <div>
                         <button class="bttnPrimary">LIGHTBOX</button><button class="bttnSecondary">PRIVACY</button>
@@ -183,7 +208,8 @@
                                 https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                 <path d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"/></svg>
                         </div>
-                        <p>Identify Goals</p>
+                        <p class="numbersBold">231</p>
+                        <p class="smallThin">Happy Users</p>
                     </li>
                     <li>
                         <div class="icons iconProgramming iconsTransparent">
@@ -192,7 +218,8 @@
                                 https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                 <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
                         </div>
-                        <p>Situation Analysis</p>
+                        <p class="numbersBold">385</p>
+                        <p class="smallThin">Issues Solved</p>
                     </li>
                     <li>
                         <div class="icons iconSettings iconsTransparent">
@@ -201,7 +228,8 @@
                                 https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                 <path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/></svg>
                         </div>
-                        <p>Tasks Settings</p>
+                        <p class="numbersBold">159</p>
+                        <p class="smallThin">Good Reviews</p>
                     </li>
                     <li>
                         <div class="icons iconChat iconsTransparent">
@@ -210,7 +238,8 @@
                                 https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                 <path d="M208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 38.6 14.7 74.3 39.6 103.4c-3.5 9.4-8.7 17.7-14.2 24.7c-4.8 6.2-9.7 11-13.3 14.3c-1.8 1.6-3.3 2.9-4.3 3.7c-.5 .4-.9 .7-1.1 .8l-.2 .2 0 0 0 0C1 327.2-1.4 334.4 .8 340.9S9.1 352 16 352c21.8 0 43.8-5.6 62.1-12.5c9.2-3.5 17.8-7.4 25.3-11.4C134.1 343.3 169.8 352 208 352zM448 176c0 112.3-99.1 196.9-216.5 207C255.8 457.4 336.4 512 432 512c38.2 0 73.9-8.7 104.7-23.9c7.5 4 16 7.9 25.2 11.4c18.3 6.9 40.3 12.5 62.1 12.5c6.9 0 13.1-4.5 15.2-11.1c2.1-6.6-.2-13.8-5.8-17.9l0 0 0 0-.2-.2c-.2-.2-.6-.4-1.1-.8c-1-.8-2.5-2-4.3-3.7c-3.6-3.3-8.5-8.1-13.3-14.3c-5.5-7-10.7-15.4-14.2-24.7c24.9-29 39.6-64.7 39.6-103.4c0-92.8-84.9-168.9-192.6-175.5c.4 5.1 .6 10.3 .6 15.5z"/></svg>
                         </div>
-                        <p>Social Interaction</p>
+                        <p class="numbersBold">127</p>
+                        <p class="smallThin">Case Studies</p>
                     </li>
                     <li>
                         <div class="icons iconRocket iconsTransparent">
@@ -219,7 +248,8 @@
                             https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                             <path d="M156.6 384.9L125.7 354c-8.5-8.5-11.5-20.8-7.7-32.2c3-8.9 7-20.5 11.8-33.8L24 288c-8.6 0-16.6-4.6-20.9-12.1s-4.2-16.7 .2-24.1l52.5-88.5c13-21.9 36.5-35.3 61.9-35.3l82.3 0c2.4-4 4.8-7.7 7.2-11.3C289.1-4.1 411.1-8.1 483.9 5.3c11.6 2.1 20.6 11.2 22.8 22.8c13.4 72.9 9.3 194.8-111.4 276.7c-3.5 2.4-7.3 4.8-11.3 7.2v82.3c0 25.4-13.4 49-35.3 61.9l-88.5 52.5c-7.4 4.4-16.6 4.5-24.1 .2s-12.1-12.2-12.1-20.9V380.8c-14.1 4.9-26.4 8.9-35.7 11.9c-11.2 3.6-23.4 .5-31.8-7.8zM384 168a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>
                         </div>
-                        <p>Get Things Done</p>
+                        <p class="numbersBold">211</p>
+                        <p class="smallThin">Orders Received</p>
                     </li>
                 </ul>
             </article>
@@ -231,13 +261,13 @@
                     on your personal development
                 </p>
                 <div>
-                    <button class="bttnPrimary">DOWNLOAD</button><button class="bttnPrimary">DOWNLOAD</button>
+                    <button class="bttnPrimary"> <div class="appleIcon"></div> DOWNLOAD</button>
+                    <button class="bttnPrimary"> <div class="playIcon"></div> DOWNLOAD</button>
                 </div>
             </article>
     
         </section>
     </main>
-
 
     <footer>
         <div class="infoContainer">
@@ -259,15 +289,39 @@
                 <li>Advanced Timer</li>
                 <li>Music Store</li>
             </ul>
-            <ul>
-                <li><img src="#" alt="#"></li>
-                <li><img src="#" alt="#"></li>
-                <li><img src="#" alt="#"></li>
-                <li><img src="#" alt="#"></li>
+            <ul class="socialIconsContainer">
+                <li class="socialIcons">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - 
+                            https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </li>
+                <li class="socialIcons">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - 
+                            https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                </li>
+                <li class="socialIcons">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - 
+                        https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/></svg>
+                </li>
+                <li class="socialIcons">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - 
+                            https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </li>
             </ul>
         </div>
         <p>Copyright 2020 Inovatik - All rights resrved</p>
-
+    
     </footer>
+
+
 </body>
+
+
 </html>
