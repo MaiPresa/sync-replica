@@ -2,19 +2,26 @@
 
 
 .firstSection {
-    max-width: 1200px;
-    margin: auto;
     @include flexbox(column, center, center, 24px);
+
     .firstArticle {
         @include flexbox(row, center, center, 24px);
+        flex-wrap: wrap;
+        width: 100%;
 
         div {
             @include flexbox(column, center, flex-start, 0px);
-            max-width: 75ch;
+            max-width: 50ch;
             text-align: left;
+            align-self: flex-start;
+
+            p {
+                margin: 0;
+            }
 
             ul {
                 padding: 16px;
+                margin: 0;
             }
 
             button {
@@ -23,38 +30,47 @@
         }
 
         img {
-            max-width: 360px;
+            max-width: 520px;
+            width: 100%;
         }
     }
 
     .secondArticle {
         @include flexbox(row, center, center, 24px);
+        flex-wrap: wrap;
+        width: 100%;
 
-        div {
-            @include flexbox(column, center, flex-start, 0px);
-            max-width: 75ch;
+        &>div {
+            @include flexbox(column, flex-start, flex-start, 0px);
+            max-width: 50ch;
             text-align: left;
+            align-self: flex-start;
+            
+            .screensContainer {
+                @include flexbox(row, center, center, 0px);
+                flex-wrap: wrap;
+            }
 
             ul {
                 padding: 16px;
             }
 
-            div {
-                margin-left: -8px;
-                @include flexbox(row, center, flex-start, 0);
+            &>div:last-child {
+                @include flexbox (row, center, center, 0);
+                flex-wrap: wrap;
             }
         }
 
         img {
-            max-width: 360px;
+            max-width: 520px;
+            width: 100%;
             order: 1;
         }
     }
 }
 
 .secondSection {
-    max-width: 1200px;
-    margin: auto;
+    margin-top: 80px;
     text-align: center;
 
     ul {
@@ -75,7 +91,7 @@
     .testimonial {
         @include flexbox(column, center, center, 0);
         max-width: 75ch;
-        min-width: 45ch;
+        //min-width: 45ch;
         text-align: center;
 
         hr {
@@ -86,8 +102,15 @@
 
     article:last-child p {
         max-width: 75ch;
-        min-width: 45ch;
+        //min-width: 45ch;
         margin: auto;
+        margin-bottom: 24px;
+
+    }
+
+    article:last-child div {
+        @include flexbox(row, center, center, 0px);
+        flex-wrap: wrap;
     }
 }
 

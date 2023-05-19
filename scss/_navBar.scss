@@ -2,10 +2,14 @@
 
 
 nav {
+    position: sticky;
+    top: 0;
     @include flexbox(row,space-between ,center, 0px);
+    flex-wrap: wrap;
     height: 64px;
     max-width: 1200px;
     margin: auto;
+    
 
     img {
         max-height: 36px;
@@ -13,6 +17,7 @@ nav {
 
     ul {
         @include flexbox(row, space-between ,center, 4px);
+        flex-wrap: wrap;
         list-style: none;
         
         li {
@@ -27,3 +32,23 @@ nav {
         }
     }
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdownContent {
+    display: block;
+  }

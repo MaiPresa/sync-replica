@@ -2,12 +2,21 @@
 
 
 header {
-    @include flexbox(column, center, center, 24px);
+    @include flexbox(column, center, center, 0);
     text-align: center;
+    margin-top: 80px;
 
-    div p {
+    div {
+        
+        p {
         max-width: 75ch;
-        min-width: 45ch;
+        margin: auto;
+        margin-bottom: 16px;
+        }
+        div {
+            @include flexbox(row, center, center, 0);
+            flex-wrap: wrap;
+        }
     }
 
     ul {

@@ -36,3 +36,8 @@ $bgColor: #F7FAFD;
     border-radius: 48px;
     color: $red;
 }
+
+@mixin textSize ($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
